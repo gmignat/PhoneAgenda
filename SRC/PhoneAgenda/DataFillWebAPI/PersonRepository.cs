@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace DataFillWebAPI
 {
 
-	public class PersonRepository
+	public class PersonRepository // nu mai zici clasa de actiuni crud ci repository
 	{
 		public Person[] GetAllPersons()
 		{
