@@ -41,4 +41,5 @@ jobs:
       with:
         name: Net5Exe
         path: SRC/PhoneAgenda/PhoneAgendaWebAPI5/Grati
+        retention-days: 1
             
