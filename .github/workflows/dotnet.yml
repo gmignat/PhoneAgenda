@@ -29,3 +29,17 @@ jobs:
               dotnet build --no-restore
     #- name: Test
     #  run: dotnet test --no-build --verbosity normal
+    - name build executable
+      run |
+          cd SRC
+          cd PhoneAgenda
+          cd PhoneAgendaWebAPI5
+          dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true -o Grati
+
+     - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-without-markdown
+          path: |
+            SRC/PhoneAgenda/PhoneAgendaWebAPI5/Grati
+            
