@@ -37,9 +37,8 @@ jobs:
           dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true -o Grati
 
      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist-without-markdown
-          path: |
-            SRC/PhoneAgenda/PhoneAgendaWebAPI5/Grati
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist-without-markdown
+        path: SRC/PhoneAgenda/PhoneAgendaWebAPI5/Grati
             
