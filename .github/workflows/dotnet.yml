@@ -30,7 +30,7 @@ jobs:
     #- name: Test
     #  run: dotnet test --no-build --verbosity normal
     - name build executable
-      run |
+      run: |
           cd SRC
           cd PhoneAgenda
           cd PhoneAgendaWebAPI5
